@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="header">
+          <h1 id="title">WSB Gdynia/Gdańsk</h1>
+          <p id="description">Ankieta studencka dot. jakości kształcenia</p>
+        </header>
+        <form id="survey-form">
+          <div id="form-group">
+            <label id="name-label" for="name">Imię:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Podaj swoje imię"
+              required
+            />
+          </div>
+          <div id="form-group">
+            <label id="surname-label" for="surname">Nazwisko:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Podaj swoje nazwisko"
+              required
+            />
+          </div>
+          <div id="form-group">
+            <label id="number-label" for="age">Wiek:</label>
+            <input
+              type="number"
+              id="number"
+              name="age"
+              min="19"
+              max="99"
+              placeholder="Podaj swój wiek"
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Podaj swój Email"
+              required
+            />
+            <div class="form-group">
+              <p>Skąd dowiedziałeś się o ankiecie?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>
+                  Wybierz jednen z wariantów
+                </option>
+                <option value="student">Z internetu</option>
+                <option value="job">Od kolegi</option>
+                <option value="learner">Od wykładowcy</option>
+                <option value="other">Inna droga</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>Jaką masz płeć?</p>
+              <label
+                ><input
+                  type="radio"
+                  name="gener"
+                  value="male"
+                  checked
+                />Mężczyzna</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="gener"
+                  value="female"
+                  checked
+                />Kobieta</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="gener"
+                  value="other"
+                  checked
+                />Inna</label
+              >
+              <div class="form-group">
+                <p>Co powinniśmy poprawić?</p>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="improvements"
+                    value="improve-lectures"
+                  />Poprawić wykłady</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="improvements"
+                    value="improve-lectures"
+                  />Poprawić ćwiczenia</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="improvements"
+                    value="improve-lectures"
+                  />Poprawić laboratoria</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="improvements"
+                    value="improve-lectures"
+                  />Poprawić konserwatoria</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="improvements"
+                    value="improve-lectures"
+                  />Poprawić seminaria</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="improvements"
+                    value="improve-lectures"
+                  />Poprawić wymagania względem studentów</label
+                >
+                <div class="form-group">
+                  <p>Jakiś komentarz?</p>
+                  <textarea
+                    id="comment"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Prowadz swój komentarz tutaj..."
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" id="submit" class="submit-button">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
